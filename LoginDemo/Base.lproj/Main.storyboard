@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +23,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="rnJ-49-5Wc">
+            <objects>
+                <viewController id="T16-jv-OsD" customClass="LoginViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="84g-iN-IEz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jz8-1e-deT">
+                                <rect key="frame" x="79" y="106" width="216" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRX-fQ-wt3">
+                                <rect key="frame" x="79" y="160" width="216" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qe-d9-Sn0">
+                                <rect key="frame" x="168" y="216" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="T16-jv-OsD" eventType="touchUpInside" id="Gze-fi-Plh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iRX-fQ-wt3" firstAttribute="top" secondItem="Jz8-1e-deT" secondAttribute="bottom" constant="24" id="CQx-Zk-OLA"/>
+                            <constraint firstItem="Jz8-1e-deT" firstAttribute="leading" secondItem="8cn-1b-tyR" secondAttribute="leading" constant="79" id="Jcw-Uk-VJA"/>
+                            <constraint firstItem="Jz8-1e-deT" firstAttribute="centerX" secondItem="84g-iN-IEz" secondAttribute="centerX" id="L0L-RE-bdt"/>
+                            <constraint firstItem="iRX-fQ-wt3" firstAttribute="centerX" secondItem="3Qe-d9-Sn0" secondAttribute="centerX" id="L1D-Fx-RJt"/>
+                            <constraint firstItem="Jz8-1e-deT" firstAttribute="top" secondItem="8cn-1b-tyR" secondAttribute="top" constant="86" id="LMa-rl-6Ra"/>
+                            <constraint firstItem="Jz8-1e-deT" firstAttribute="trailing" secondItem="iRX-fQ-wt3" secondAttribute="trailing" id="Pzg-O2-Ogz"/>
+                            <constraint firstItem="Jz8-1e-deT" firstAttribute="leading" secondItem="iRX-fQ-wt3" secondAttribute="leading" id="XBc-8e-1rh"/>
+                            <constraint firstItem="3Qe-d9-Sn0" firstAttribute="top" secondItem="iRX-fQ-wt3" secondAttribute="bottom" constant="26" id="vFu-xU-53x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8cn-1b-tyR"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Jz8-1e-deT" id="TxW-KE-6Q4"/>
+                        <outlet property="passwordTextField" destination="iRX-fQ-wt3" id="Mez-oA-rNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CsG-CW-rrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67" y="826"/>
         </scene>
     </scenes>
 </document>
