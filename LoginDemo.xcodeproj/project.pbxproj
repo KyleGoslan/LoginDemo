@@ -13,6 +13,7 @@
 		275306142029E60400CA3F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275306132029E60400CA3F3D /* Assets.xcassets */; };
 		275306172029E60400CA3F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275306152029E60400CA3F3D /* LaunchScreen.storyboard */; };
 		2753061F2029E63900CA3F3D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753061E2029E63900CA3F3D /* LoginViewController.swift */; };
+		279CA56D2029E9530021EBA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 279CA56C2029E9520021EBA1 /* GoogleService-Info.plist */; };
 		C713F45F17B54070F8543351 /* Pods_LoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF23F74B722928A38EED39B /* Pods_LoginDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		275306162029E60400CA3F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275306182029E60400CA3F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2753061E2029E63900CA3F3D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		279CA56C2029E9520021EBA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8442179696255E688C6B6317 /* Pods-LoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginDemo/Pods-LoginDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8BD51010DE2C0F0A6D45835C /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DAF23F74B722928A38EED39B /* Pods_LoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				275306132029E60400CA3F3D /* Assets.xcassets */,
 				275306152029E60400CA3F3D /* LaunchScreen.storyboard */,
 				275306182029E60400CA3F3D /* Info.plist */,
+				279CA56C2029E9520021EBA1 /* GoogleService-Info.plist */,
 			);
 			path = LoginDemo;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275306172029E60400CA3F3D /* LaunchScreen.storyboard in Resources */,
+				279CA56D2029E9530021EBA1 /* GoogleService-Info.plist in Resources */,
 				275306142029E60400CA3F3D /* Assets.xcassets in Resources */,
 				275306122029E60400CA3F3D /* Main.storyboard in Resources */,
 			);
